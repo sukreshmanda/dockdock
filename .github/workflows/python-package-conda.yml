@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         name: A job to automate contrib in readme
         steps:
-            - name: Contribute List
+            - name: Contributers List
               uses: akhilmhdh/contributors-readme-action@v2.3.6
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_SECRET }}
