@@ -22,6 +22,15 @@ $ python3 app.py
 
 - [@sukreshmanda](https://www.github.com/sukreshmanda)
 
+## Collaborators
+
+<!-- readme: collaborators -start -->
+<!-- readme: collaborators -end -->
+
+## Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
 
 ## Tech Stack
