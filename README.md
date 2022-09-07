@@ -13,6 +13,11 @@ $ cd dockdock
 $ python3 app.py
 ```
 
+## Tech Stack
+
+**Client:** Python3
+
+**Backend:** Docker
 
 ## 🔗 Links
 
@@ -59,11 +64,5 @@ $ python3 app.py
 </table>
 <!-- readme: contributors -end -->
 
-
-## Tech Stack
-
-**Client:** Python3
-
-**Backend:** Docker
 
 
