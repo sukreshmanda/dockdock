@@ -1,5 +1,5 @@
 import json
-from console_mapper import print_okblue, print_info_okblue
+from console_mapper import print_info_okblue
 
 LEVELS = "levels"
 
