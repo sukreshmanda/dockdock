@@ -3,12 +3,7 @@
     {
       "name": "Hello world",
       "level" : "1",
-      "file": "./levels/level1.json"
-    },
-    {
-      "name": "Dock + Dock = Docker",
-      "level" : "2",
-      "file": "./levels/level2.json"
+      "file": "levels/level1.json"
     }
   ]
 }
