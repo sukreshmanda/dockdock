@@ -1,6 +1,7 @@
 import json
 from console_mapper import print_info_okblue
 
+NAME = "name"
 STATE_JSON = "state.json"
 LEVELS = "levels"
 FILE = "file"
@@ -28,7 +29,7 @@ def play_levels():
     for level in game_config[LEVELS]:
         level_path = level[FILE]
         level_config = json.load(open(level_path))
-        print_info_okblue(level_config[INFO], end="\n")
+        print_info_okblue(level_config[INFO], state[NAME], end="\n")
 
 
 def write_state(updated_state):
@@ -38,4 +39,4 @@ def write_state(updated_state):
     conf.close()
 
 
-write_state()
+play_levels()
