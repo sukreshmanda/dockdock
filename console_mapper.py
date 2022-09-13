@@ -11,10 +11,15 @@ class BColors:
     UNDERLINE = '\033[4m'
 
 
-def print_okblue(text, user,  end=""):
-    formatted_str = text.format(BColors.OKBLUE+user, BColors.BOLD+BColors.ITALIC, BColors.ENDC+BColors.OKBLUE)
-    print(formatted_str+BColors.ENDC, end=end)
+def print_okblue(text, end=""):
+    formatted_str = text.format(BColors.OKBLUE, BColors.BOLD + BColors.ITALIC, BColors.ENDC + BColors.OKBLUE)
+    print(formatted_str + BColors.ENDC, end=end)
 
 
-def print_info_okblue(text, user,  end=""):
-    print_okblue(text, user,  end)
+def print_info_okblue(text, end=""):
+    print_okblue(text, end)
+
+
+def print_question_header(text, end):
+    formatted = BColors.HEADER + text + BColors.ENDC
+    print(formatted, end=end)
