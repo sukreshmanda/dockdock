@@ -1,6 +1,6 @@
 {
   "question": "Pull hello-world image ",
-  "info": "```{} \n\n{}docker pull <image-name>{} command is used to pull images from docker hub\n ```",
+  "info": "{}```\n{}docker pull <image-name>{} command is used to pull images from docker hub\n ```",
   "state": {
     "images":{
       "add": "hello-world"
