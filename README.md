@@ -6,6 +6,7 @@ DockDock is a simple python application that helps coders who are getting to try
 
 
 ## Usage/Examples
+- Make sure Docker is installed locally using ```$ docker version ```
 
 ```console
 $ git clone https://github.com/sukreshmanda/dockdock.git
