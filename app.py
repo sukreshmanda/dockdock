@@ -1,5 +1,5 @@
 import json
-from console_mapper import print_info_okblue, print_question_header
+from console_mapper import print_info_okblue_formatting, print_question_header, print_info_red
 
 QUESTION = "question"
 NAME = "name"
@@ -24,14 +24,19 @@ def load_state_from_file():
     return load_state
 
 
+def is_current_state_fixed():
+    pass
+
+
 def play_levels():
     game_config = load_game_configs()
     state = load_state_from_file()
     for level in game_config[LEVELS]:
         level_path = level[FILE]
         level_config = json.load(open(level_path))
-        print_question_header("Question: "+level_config[QUESTION], end="\n")
-        print_info_okblue(level_config[INFO], end="\n")
+        print_question_header("Question: " + level_config[QUESTION], end="\n")
+        print_info_red(str(state["current_level"]), end="\n")
+        print_info_okblue_formatting(level_config[INFO], end="\n")
 
 
 def write_state(updated_state):
