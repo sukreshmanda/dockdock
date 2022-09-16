@@ -68,4 +68,3 @@ def docker_images(name=None, filter_out=None):
     return out
 
 
-print()
