@@ -28,15 +28,25 @@ def is_current_state_fixed():
     pass
 
 
+def print_next_level_info(info):
+    pass
+
+
 def play_levels():
     game_config = load_game_configs()
     state = load_state_from_file()
-    for level in game_config[LEVELS]:
-        level_path = level[FILE]
-        level_config = json.load(open(level_path))
-        print_question_header("Question: " + level_config[QUESTION], end="\n")
-        print_info_red(str(state["current_level"]), end="\n")
-        print_info_okblue_formatting(level_config[INFO], end="\n")
+
+    # for level in game_config[LEVELS]:
+    #     level_path = level[FILE]
+    #     level_config = json.load(open(level_path))
+    #     print_question_header("Question: " + level_config[QUESTION], end="\n")
+    #     print_info_red(str(state["current_level"]), end="\n")
+    #     print_info_okblue_formatting(level_config[INFO], end="\n")
+    while state["current_level"] < len(game_config["levels"]):
+        # print_next_level_info(game_config["levels"][state["current_level"]+1])
+        print(game_config["levels"][state["current_level"]])
+        state["current_level"] += 1
+        write_state(state)
 
 
 def write_state(updated_state):
