@@ -1,6 +1,8 @@
 import json
 from console_mapper import print_info_okblue_formatting, print_question_header, print_info_red
 
+CURRENT_LEVEL = "current_level"
+
 QUESTION = "question"
 NAME = "name"
 STATE_JSON = "state.json"
@@ -42,10 +44,10 @@ def play_levels():
     #     print_question_header("Question: " + level_config[QUESTION], end="\n")
     #     print_info_red(str(state["current_level"]), end="\n")
     #     print_info_okblue_formatting(level_config[INFO], end="\n")
-    while state["current_level"] < len(game_config["levels"]):
+    while state[CURRENT_LEVEL] < len(game_config[LEVELS]):
         # print_next_level_info(game_config["levels"][state["current_level"]+1])
-        print(game_config["levels"][state["current_level"]])
-        state["current_level"] += 1
+        print(game_config[LEVELS][state[CURRENT_LEVEL]])
+        state[CURRENT_LEVEL] += 1
         write_state(state)
 
 
